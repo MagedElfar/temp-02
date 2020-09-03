@@ -1,0 +1,688 @@
+body{
+    padding-top: 50px;
+    overflow: visible
+}
+
+/*******************************************************************************************************************************************************/
+/*start option box sec*/
+.option-box {
+    position: fixed;
+    top: 200px;
+    z-index: 9999;
+    display: flex;
+    align-items: flex-start
+}
+
+.option-box .color-box{
+    width:200px;
+    background: #333333;
+    padding: 15px;
+}
+
+.hide{ display: none }
+
+.option-box .color-box .color-switch{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.option-box .color-box ul li{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer
+}
+
+.option-box .color-box ul li:first-of-type{background: #E41B17 }
+
+.option-box .color-box ul li:nth-of-type(2){ background-color: yellow }
+
+.option-box .color-box ul li:last-of-type{ background-color: purple }
+
+.option-box .btn{
+    border-radius: 0;
+    color: wheat;
+    opacity: 0.5;
+    transition: all 0.5s linear
+}
+
+.option-box .btn:hover{  opacity: 1 }
+/*end  option box sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start nav*/
+
+/*brand*/
+.navbar-inverse .navbar-brand {
+    color: #BBB;
+    font-size: 21px
+}
+
+.navbar-inverse .navbar-brand span{
+    color: #E41B17;
+    font-size: 14px
+}
+
+/*other links*/
+.navbar-inverse .navbar-nav > li > a:hover {color: #FFF; }
+
+.navbar-inverse .navbar-nav > li > a{ font-size: 16px }
+
+/*drop down*/
+.dropdown-menu{
+    background-color: #222;
+    border-top: 1px solid #E41B17;
+    min-width: 180px;
+    left: 0 !important;
+    right: auto !important
+}
+
+/*drop down link*/
+.dropdown-menu > li > a{
+    color:#BBB;
+    padding: 5px 20px;
+    transition: padding 0.5s linear
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus{
+    background-color: #E41B17;
+    color: #FFF;
+    padding-left: 25px
+}
+
+.dropdown-menu .divider {
+    background-color: #E41B17;
+    margin: 0
+}
+
+@media (max-width:767px){
+    .navbar-nav > li > a{
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+}
+
+
+/*end nav*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start slider*/
+
+.carousel-indicators{ bottom: 5px !important }
+
+.carousel-indicators li{
+    border: 1px solid #EEE;
+    background-color: #E41B17 
+}
+
+
+.carousel-inner > .item{
+    width: 100%;
+    height: 400px
+}
+
+.thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    width: 100%;
+    height: 100%
+}
+
+@media (min-width:768px){
+    .carousel-caption{
+        background: rgba(0,0,0, 0.5);
+        padding: 0 10px !important;
+        width: 73%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .carousel-caption .lead{
+        font-size: 13px;
+        color: #DDD
+    }
+}
+
+@media (min-width:1200px){
+    .carousel-caption{
+        background: rgba(0,0,0, 0.5);
+        padding: 0 10px !important;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .carousel-caption .lead{
+        font-size: 13px;
+        color: #DDD
+    }
+}
+
+/*end slider*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start about sec*/
+
+.about h1,
+.about h3{ font-weight: bold }
+
+@media (max-width:767px){
+    .about .lead{
+        color: #888;
+        font-size: 15px;
+        margin-top: 15px;
+        text-transform: capitalize
+    }
+}
+
+@media (min-width:768px){
+   .about .lead{
+        color: #888;
+        font-size: 20px;
+        margin-top: 15px;
+        text-transform: capitalize
+    } 
+}
+
+/*end about sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start Features sec*/
+
+.Features{ background-color: #EEE }
+
+.Features .feat{
+    margin-bottom: 30px;
+    background: #FFF;
+    border: 1px solid #DDD;
+    padding: 10px
+}
+
+.Features .feat h4{ margin: 10px 0 }
+
+.Features .feat i{ color: darkmagenta }
+
+.Features .feat p{
+    color: #888;
+    line-height: 1.7;
+    font-size: 12px
+        
+}
+
+/*end Features sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start Testimonials sec*/
+
+.Testimonials .lead{
+    color: #888;
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 400;
+    margin-bottom: 10px
+}
+
+.Testimonials span{
+    font-size: 18;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.Testimonials .carousel-indicators{
+    position: static;
+    width: 100%;
+    margin-left: auto;
+    padding-top: 20px
+}
+
+.Testimonials .carousel-indicators li{
+    text-indent: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.5;
+    overflow: hidden;
+    background-color: none;
+    margin: 5px;
+    transition: all 0.5s linear
+}
+
+.Testimonials .carousel-indicators .active{
+    background-color: none;
+    opacity: 1;
+}
+
+.Testimonials .carousel-indicators li img{
+    text-indent: 0;
+    max-width: 80px;
+    max-height: 80px;
+    border: none;
+    background-color: none;
+}
+
+
+.Testimonials .carousel-inner{ min-height: 100px }
+
+.Testimonials .carousel-inner > .item{
+    width: auto;
+    height: auto
+}
+
+/*end Testimonials sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start price sec*/
+
+.price-table{ background-color: #EEE }
+
+.price-table .price-box{
+    background-color: #FFF;
+    padding: 10px;
+    border: 1px solid #DDD;
+    margin-bottom: 10px
+}
+
+.price-table .price-box h3{
+    margin: 3px 0 15px;
+    font-weight: bold
+}
+
+.price-table .price-box p{
+    font-size: 35px;
+    font-weight: bold;
+    color: #666;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #F3F3F3;
+    line-height: 100px;
+    transition: all 0.7s linear;
+    border: 2px solid #FFF
+}
+
+.price-table .price-box:hover p{
+    transform: rotate(360deg) scale(1.1, 1.1);
+    border: 2px solid #E41B17
+}
+
+.price-table .price-box ul{
+    font-size: 14px;
+    line-height: 250%;
+}
+
+.price-table .price-box button{
+    margin-bottom: 5px
+}
+
+@media (max-width:767px){
+    .price-table .price-box{
+        margin-bottom: 30px
+    }
+}
+
+@media (min-width:768px){
+   .price-table .price-box{
+        margin-bottom: 30px
+    }
+}
+
+/*end price sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start team sec*/
+
+.team{
+    background: url(img/09.webp) no-repeat center fixed;
+    background-size: cover;
+    min-height: 600px
+}
+
+.team .team-contant{
+    color: white;
+    background: rgba(0,0,0,0.6);
+    min-height: 600px
+}
+
+
+.team .team-contant .pearson img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgba(0,0,0,0);
+    transition: all 0.7s linear
+}
+
+.team .team-contant .pearson:hover img{
+    transform: scale(1.1);
+    margin-bottom: 5px;
+    border: 2px solid #E41B17;
+}
+
+.team .team-contant .pearson h3{ margin: 10px 0 15px }
+
+.team .team-contant .pearson button{
+    width: 50px;
+    height: 30px;
+    margin-right: 4px
+}
+
+
+
+@media (max-width:767px){
+    .team .team-contant .pearson{ margin-bottom: 30px }
+}
+
+@media (min-width:768px){
+   .team .team-contant .pearson{ margin-bottom: 30px }
+}
+
+/*end team sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start Subscribe sec*/
+
+.Subscribe{ background: #EEE }
+
+.Subscribe .h1 {
+    margin-bottom: 20px;
+    letter-spacing: 2px
+}
+
+.Subscribe .lead{
+    color: #888;
+    margin-bottom: 20px
+}
+
+.Subscribe .form-control{
+    margin-right: -5px;
+    border-radius: 4px 0 0 4px
+}
+
+.Subscribe .btn{border-radius: 0 4px 4px 0 }
+
+@media (max-width:767px){
+    .Subscribe .btn{ margin-top: 15px }
+    
+    .form-inline .form-control {
+        width: 400px;
+        margin: auto
+    }
+}
+
+
+/*end Subscribe sec*/
+/*******************************************************************************************************************************************************/ 
+
+/*******************************************************************************************************************************************************/
+/*start Statistics sec*/
+
+.Statistics{
+    min-height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/13.webp") no-repeat center fixed;
+    background-size: cover
+}
+
+.Statistics .h1 { color: white }
+
+.Statistics .stat{
+    color: #888;;
+    transition: all 0.7s linear;
+    margin-bottom: 30px
+}
+
+.Statistics .stat i{ transition: all 0.7s linear }
+
+.Statistics .stat p{
+    margin-top: 5px;
+    margin-bottom: 2px
+}
+
+.Statistics .stat:hover{
+    color: #fff;
+    transform: scale(1.1,1.1);
+}
+
+.Statistics .stat:hover i{ color: #6196FF }
+
+/*end Statistics sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start skills sec*/
+
+.skills .skills-Progress{ padding-top: 20px }
+
+.skills .progress{
+    height: 36px;
+    line-height: 40px
+}
+.skills .progress-bar{
+    text-align: left;
+    line-height: 36px;
+    text-indent: 10px;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.skills .team-about{
+    text-align: left;
+    padding-top: 20px
+}
+
+.skills .team-about h3{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.skills .team-about .lead{  margin-bottom: 15px }
+
+/*end skills sec*/
+/*******************************************************************************************************************************************************/ 
+
+/*******************************************************************************************************************************************************/
+/*start Contact sec*/
+
+.Contact{
+    min-height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("img/14.webp") no-repeat center fixed;
+    background-size: cover
+}
+
+.Contact i{ color: #999 }
+
+.Contact .h1 {
+    margin-bottom: 10px;
+    color: #999;
+}
+
+
+.Contact .lead{
+    color: #999;
+    margin-bottom: 50px
+}
+
+.Contact textarea{
+    height: 108px;
+    margin-bottom: 15px
+}
+
+.Contact input,
+.Contact textarea{
+    background: rgba(82,78,78,0.3);
+    color: #FFF;
+    border: none
+}
+
+/*end Contact sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start Clients sec*/
+
+.Clients{ background: #EEE }
+
+.Clients img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    opacity: 0.4;
+    transition: all 0.5s linear
+}
+
+.Clients img:hover{ opacity: 1 }
+
+/*end Clients sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start work sec*/
+
+.work{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #333;
+    color:#AAA
+}
+
+.work h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 1px
+}
+
+.work .flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between
+}
+
+.work .flex-wrap li{
+    width: 30%;
+    padding: 5px
+}
+
+.work .flex{ display: flex; }
+
+.work .flex li{
+    padding-top: 5px;
+    padding-right: 5px
+}
+
+.work .flex li img{
+    opacity: 0.6;
+    transition: all 0.5s linear
+}
+
+.work .flex li img:hover{ opacity: 1 }
+
+.work .img-thumbnail{
+    background: transparent;
+    margin-bottom: 5px;
+    border: 1px solid #555
+}
+
+/*end Clients sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start work sec*/
+
+footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #666;
+    color:#aaa
+}
+
+footer p{
+    font-size: 20px;
+    padding: 0;
+    margin: 0
+}
+
+footer p span{ font-weight: bold }
+
+/*end Clients sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start TO TOP sec*/
+
+.to-top{
+    position: fixed;
+    bottom: 50px;
+    right: 10px
+}
+
+.to-top .btn{
+    background-color: black;
+    color: #FFF;
+     opacity: 0.5;
+    transition: all 0.5s linear
+}
+
+.to-top .btn:hover{ opacity: 1 }
+
+/*end TO TOP sec*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start loding sec*/
+
+.loading{
+    background-color: #222;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999
+}
+
+.loading .loader{
+    margin-top: 200px;
+    margin-left: 550px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid white;
+    border-top: 10px solid #E41B17;
+    animation: swing 1s linear infinite
+}
+
+/*end loding sec*/
+/*******************************************************************************************************************************************************/
+    
+/*******************************************************************************************************************************************************/
+/*start grouping sec*/
+.sec-pading{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.h1 {
+    margin-bottom: 50px;
+    font-weight: bold
+}
+
+.team,
+.Statistics{ background-size: cover }
+
+
+/*end grouping sec*/
+/*******************************************************************************************************************************************************/    

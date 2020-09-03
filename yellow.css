@@ -1,0 +1,32 @@
+/*start*/
+
+/*active link*/
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.carousel-indicators .active,
+.carousel-indicators li,
+.Testimonials .carousel-indicators .active,
+.option-box .btn{
+    background-color: yellow
+}
+
+.navbar-inverse .navbar-brand span,
+.about h1 span,
+.about h3 span,
+.Testimonials span,
+.work h3,footer p span{
+    color: yellow;
+}
+
+
+.dropdown-menu,
+.Testimonials .carousel-indicators .active,
+.option-box .color-box,
+.option-box .btn{
+    border: 2px solid yellow
+}
+
+/*end*/
